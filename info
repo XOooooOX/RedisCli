@@ -1,0 +1,20 @@
+for use docker in docker folder find daemon.json file
+and add this
+{
+    "registry-mirrors": ["https://registry.docker.ir"]
+}
+install redis by docker
+after run container from redis image
+in cli mode:
+
+redis-cli ping --> pong
+redis-cli set keyName value
+redis-cli get keyName
+redis-cli dbsize -> show count of value
+redis-cli keys '*' -> show all key
+redis-cli exists key -> show key exist or not
+redis-cli keys 'a' -> show all key has a char
+redis-cli flushall -> clean all cache
+redis-cli config get *memory* -> show memory configuration 
+redis-cli info stats -> show state of redis
+redis-cli connection info> --bigkeys -> show big key
